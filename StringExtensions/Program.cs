@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using ExtensionMethods;
+
 
 namespace StringExtensions
 {
@@ -25,9 +28,25 @@ namespace StringExtensions
             foreach(string s in writings)
             {
                 Console.WriteLine(s);
+                //Console.WriteLine(s.Capitalize());
+                //Console.WriteLine(s.DeCapitalize());
+                Console.WriteLine(s.Titleize());
+
+                Console.WriteLine($"Word Count: {s.WordCount()}");
                 Console.WriteLine("---------------------------");
             }
+
             
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
